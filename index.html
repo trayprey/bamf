@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travis Preston's Card</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Travis Preston</h1>
+    <div class="card">
+      <h2>Contact Information</h2>
+      <p>Discord: <a href="https://discordapp.com/users/trayprey#7187">trayprey#7187</a></p>
+      <h2>QR Code</h2>
+      <div id="qrcode"></div>
+    </div>
+  </div>
+
+  <script>
+    // Generate QR code with desired content
+    var qr = new QRCode(document.getElementById("qrcode"), {
+      text: "https://discordapp.com/users/trayprey#7187", // Replace with your desired URL or content
+      width: 128,
+      height: 128,
+    });
+  </script>
+</body>
+</html>
